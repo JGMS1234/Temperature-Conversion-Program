@@ -1,0 +1,147 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+    background-image: url('IMG_20231125_181708_053.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    background-color: hsl(160, 70%, 67%, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10svh 10svw;
+    text-align: center;
+    box-shadow: 2px 4px 10px grey;
+    border-radius: 1.5rem;
+}
+
+#textbox {
+    text-align: center;
+    border: none;
+    box-shadow: 3px 3px 5px grey;
+    font-weight: 700;
+    width: 40svw;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.25s ease-in-out;
+}
+
+#textbox:focus {
+    outline: none;
+}
+
+#textbox::placeholder {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+#textbox:hover {
+    box-shadow: 3px 3px 5px grey;
+    scale: 1.05;
+}
+
+#textbox:active {
+    box-shadow: 3px 3px 5px grey;
+    scale: 0.95;
+}
+
+.label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+div {
+    margin-block: 0.3svh;
+}
+
+span {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    width: 85%;
+}
+
+#Box {
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15svh;
+    width: 70svw;
+    margin-bottom: 2svh;
+}
+
+/* #Box1{
+    background-color: aliceblue;
+} */
+
+#Box2{
+    margin-bottom: 2svh;
+}
+
+#Submit_Btn {
+    padding: 1.2svh 2.5svw;
+    width: 15svw;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    background-color: hsla(133, 87%, 55%);
+    border: none;
+    box-shadow: 3px 3px 5px grey;
+    color: whitesmoke;
+    border-radius: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+#Submit_Btn:hover {
+    background-color: hsla(133, 87%, 65%);
+    scale: 1.05;
+}
+
+#Submit_Btn:active {
+    background-color: hsla(133, 87%, 45%);
+    scale: 0.95;
+}
+
+#unit {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
